@@ -1,0 +1,2 @@
+-i https://pypi.org/simple
+streamlit==1.40.1

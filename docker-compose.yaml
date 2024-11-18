@@ -1,0 +1,22 @@
+# Command:
+#    $ docker-compose up -d --build
+version: '3.8'
+
+services:
+    api:
+        build:
+            context: ./api
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
+        environment:
+            - UVICORN_HOST=0.0.0.0
+            - UVICORN_PORT=8000
+    app:
+        build:
+            context: ./app
+            dockerfile: Dockerfile
+        ports:
+            - "8501:8501"
+        depends_on:
+            - api
