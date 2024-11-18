@@ -92,9 +92,9 @@ UI web app was built using `Streamlit`. Users can upload PDF documents and enter
 Running locally from root directory:
 
 ```bash
-# API
+# API: localhost:8000
 > uvicorn api.main:app
-# Web app
+# Web app: localhost:8501
 > streamlit run app/main.py
 ```
 
