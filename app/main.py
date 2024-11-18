@@ -3,7 +3,10 @@ from typing import Final
 import requests
 import streamlit as st
 
-API_URL: Final[str] = "http://api:8000"
+# Running with Docker
+# API_URL: Final[str] = "http://api:8000"
+# Running locally
+API_URL: Final[str] = "http://localhost.:8000"
 
 
 st.header("AI Assitant")
